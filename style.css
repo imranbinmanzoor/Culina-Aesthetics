@@ -1,0 +1,59 @@
+/* Custom styles for applying Google Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+h1, h2, h3, h4, .font-display {
+    font-family: 'Playfair Display', serif;
+}
+/* Style for the hero background image */
+.hero-bg {
+    background-image: url('images/hero-bg.webp');
+}
+
+.short-logo {
+    height: 48px;
+    width: 48px;
+}
+
+.before-after {
+    position: relative;
+}
+
+.before-after::before {
+    content: "before";
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    height: 30px;
+    width: 80px;
+    background-color: #33333354;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    z-index: 99;
+}
+
+.before-after::after {
+    content: "after";
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    height: 30px;
+    width: 80px;
+    background-color: #33333354;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    z-index: 99;
+}
